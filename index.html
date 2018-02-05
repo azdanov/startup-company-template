@@ -6,20 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Startup Company</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
-  <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">Startup</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-auto active">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item mx-auto">
+          <a href="about.html" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item mx-auto">
+          <a href="services.html" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item mx-auto">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item mx-auto">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="showcase">
+  <div id="showcaseCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#showcaseCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#showcaseCarousel" data-slide-to="1"></li>
+      <li data-target="#showcaseCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-image-1 active">
+        <div class="container">
+          <div class="carousel-caption d-none d-sm-block text-left mb-5">
+            <h2 class="display-3">Heading One</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi
+              assumenda dicta, dignissimos enim fugit, nemo nesciunt numquam odio omnis pariatur
+              perspiciatis, sapiente suscipit tenetur?
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Sign Up Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-image-2">
+        <div class="container">
+          <div class="carousel-caption d-none d-sm-block mb-5">
+            <h2 class="display-3">Heading Two</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab debitis, delectus
+              dolorum eaque esse magnam minima nam nobis, quo rem sed sint, voluptas? Suscipit.
+            </p>
+            <a href="#" class="btn btn-danger btn-lg">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-image-3">
+        <div class="container">
+          <div class="carousel-caption d-none d-sm-block text-right mb-5">
+            <h2 class="display-3">Heading Three</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem ea
+              exercitationem explicabo illum iure libero minima nam nisi, placeat qui quos
+              temporibus, voluptas voluptatum!
+            </p>
+            <a href="#" class="btn btn-success btn-lg">Find Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#showcaseCarousel" data-slide="prev" class="carousel-control-prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a href="#showcaseCarousel" data-slide="next" class="carousel-control-next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</section>
+
+<script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
