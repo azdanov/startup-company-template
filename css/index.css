@@ -81,4 +81,12 @@
   top: 0;
   width: 100%; }
 
+#video-play {
+  background: url("../img/media.jpeg") 0 -300px no-repeat;
+  color: white;
+  min-height: 200px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 #222; }
+
 /*# sourceMappingURL=index.css.map */

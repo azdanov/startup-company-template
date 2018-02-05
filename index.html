@@ -144,11 +144,41 @@
         <a href="#" class="btn btn-outline-danger btn-lg">Learn More</a>
       </div>
       <div class="col-md-6">
-        <img src="img/info-laptop.jpg" class="img-fluid rounded-circle img-thumbnail" alt="A laptop displaying current website">
+        <img src="img/info-laptop.jpg" class="img-fluid rounded-circle img-thumbnail"
+             alt="A laptop displaying current website">
       </div>
     </div>
   </div>
 </section>
+
+<section id="video-play">
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col">
+        <div class="container p-5">
+          <a href="#" class="video text-light" data-video="https://www.youtube.com/embed/tXMYlY-hDOo"
+             data-toggle="modal" data-target="#videoModal">
+            <i class="far fa-play-circle fa-3x fa-fw"></i>
+          </a>
+          <h2 class="mt-3">See What We Do</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="videoModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button class="close" data-dismiss="modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <iframe src="" height="350" width="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -160,6 +190,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </body>
 
 </html>
