@@ -7,13 +7,19 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
+    "concurrently": "^3.5.1",
     "node-sass": "^4.7.2",
     "nodemon": "^1.14.11"
   },
   "scripts": {
     "dev": "browser-sync start --server --files \"css/*.css, *.html, js/*.js\"",
     "build:css": "node-sass --source-map true --include-path scss \"src/css/index.scss\" \"css/index.css\"",
-    "watch:css": "nodemon -e scss -x \"npm run build:css\""
+    "watch:css": "nodemon --watch src --ext scss -x \"npm run build:css\"",
+    "build:js": "babel src/js --out-dir js --source-maps --presets=env",
+    "watch:js": "nodemon --watch src --ext js -x \"npm run build:js\"",
+    "watch": "concurrently \"yarn watch:js\" \"yarn watch:css\" --kill-others --allow-restar"
   }
 }
