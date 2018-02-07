@@ -1,6 +1,6 @@
 # Startup Company Template
 
-Demo template of a fictional startup company.
+Demo template for a fictional startup company.
 
 [Live](http://azdanov.js.org/startup-company-template/)
 
