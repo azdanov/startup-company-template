@@ -16,5 +16,19 @@ $(function () {
       $(modal + " iframe").attr("src", videoSrc);
     });
   });
+
+  $(document).on("click", "[data-toggle=\"lightbox\"]", function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+
+  $(".slider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: 'ease-out'
+  });
 });
 //# sourceMappingURL=index.js.map

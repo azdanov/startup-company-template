@@ -1,6 +1,7 @@
 $dark-overlay: rgba(20, 20, 20, 0.5);
 
 .navbar {
+  z-index: 1;
   .navbar-brand {
     font-size: 2em;
     font-weight: lighter;
@@ -51,7 +52,7 @@ $dark-overlay: rgba(20, 20, 20, 0.5);
 .carousel-caption > h2::before,
 .carousel-caption > p::before {
   background: rgba(51, 51, 51, 0.4) fixed;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   content: "";
   filter: blur(17px);
   -webkit-filter: blur(17px);
@@ -79,12 +80,14 @@ $dark-overlay: rgba(20, 20, 20, 0.5);
 }
 
 #home-heading {
-  background: url("../img/home-header.jpeg") center center no-repeat;
   color: white;
   min-height: 200px;
   position: relative;
   text-align: center;
   text-shadow: 0 1px 0 #222;
+  h2 {
+    font-weight: lighter;
+  }
 }
 
 .dark-overlay {
@@ -103,4 +106,57 @@ $dark-overlay: rgba(20, 20, 20, 0.5);
   position: relative;
   text-align: center;
   text-shadow: 0 1px 0 #222;
+  h2 {
+    font-weight: lighter;
+  }
 }
+
+#newsletter {
+  text-shadow: 0 1px 0 #222;
+  h2 {
+    font-weight: lighter;
+  }
+}
+
+#about-header {
+  h1 {
+    font-weight: lighter;
+  }
+  background: url('../img/showcase_2.jpeg') center center no-repeat;
+  color: #fff;
+  height: 200px;
+  padding-top: 50px;
+  position: relative;
+  text-shadow: 0 1px 0 #222;
+
+  .col-md-6 {
+    z-index: 0;
+  }
+
+  & h1::before,
+  & p::before {
+    background: rgba(0, 0, 0, 0.1) fixed;
+    border-radius: 0.5rem;
+    content: "";
+    filter: blur(17px);
+    -webkit-filter: blur(17px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    transform: scale(1, 1.2);
+  }
+}
+
+.about-img {
+  @media screen and (min-width: 992px) {
+    margin-top: -50px;
+  }
+}
+
+#main-footer {
+  background-color: #333 !important;
+}
+
