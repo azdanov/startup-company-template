@@ -119,15 +119,15 @@ $dark-overlay: rgba(20, 20, 20, 0.5);
 }
 
 #about-header {
-  h1 {
-    font-weight: lighter;
-  }
   background: url('../img/showcase_2.jpeg') center center no-repeat;
   color: #fff;
   height: 200px;
   padding-top: 50px;
   position: relative;
   text-shadow: 0 1px 0 #222;
+  h1 {
+    font-weight: lighter;
+  }
 
   .col-md-6 {
     z-index: 0;
@@ -144,9 +144,9 @@ $dark-overlay: rgba(20, 20, 20, 0.5);
     left: 0;
     position: absolute;
     top: 0;
+    transform: scale(1, 1.2);
     width: 100%;
     z-index: -1;
-    transform: scale(1, 1.2);
   }
 }
 
@@ -160,3 +160,19 @@ $dark-overlay: rgba(20, 20, 20, 0.5);
   background-color: #333 !important;
 }
 
+#faq {
+  .card {
+    border-color: #444;
+    a {
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: lighter;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #222;
+    }
+  }
+
+  .card-body, .card-header {
+    background-color: #333;
+  }
+}

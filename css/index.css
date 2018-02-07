@@ -118,9 +118,9 @@
     left: 0;
     position: absolute;
     top: 0;
+    transform: scale(1, 1.2);
     width: 100%;
-    z-index: -1;
-    transform: scale(1, 1.2); }
+    z-index: -1; }
 
 @media screen and (min-width: 992px) {
   .about-img {
@@ -128,5 +128,17 @@
 
 #main-footer {
   background-color: #333 !important; }
+
+#faq .card {
+  border-color: #444; }
+  #faq .card a {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #222; }
+
+#faq .card-body, #faq .card-header {
+  background-color: #333; }
 
 /*# sourceMappingURL=index.css.map */
