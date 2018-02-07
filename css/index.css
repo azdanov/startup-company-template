@@ -97,30 +97,14 @@
     font-weight: lighter; }
 
 #about-header {
-  background: url("../img/showcase_2.jpeg") center center no-repeat;
   color: #fff;
   height: 200px;
-  padding-top: 50px;
   position: relative;
   text-shadow: 0 1px 0 #222; }
   #about-header h1 {
     font-weight: lighter; }
   #about-header .col-md-6 {
     z-index: 0; }
-  #about-header h1::before,
-  #about-header p::before {
-    background: rgba(0, 0, 0, 0.1) fixed;
-    border-radius: 0.5rem;
-    content: "";
-    filter: blur(17px);
-    -webkit-filter: blur(17px);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: scale(1, 1.2);
-    width: 100%;
-    z-index: -1; }
 
 @media screen and (min-width: 992px) {
   .about-img {
